@@ -49,4 +49,11 @@ The assistant is built by integrating multiple components:
 
 ![](image/img5.jpeg)
 
+---
+
+## 📸 Videos
+
+![](image/handMove.mp4)
+
+
 
