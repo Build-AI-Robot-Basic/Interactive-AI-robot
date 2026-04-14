@@ -55,5 +55,5 @@ The assistant is built by integrating multiple components:
 
 ![Hand Move](image/handMove.mp4)
 
-
+![Speech](image/Speech_Voice.mp4)
 
