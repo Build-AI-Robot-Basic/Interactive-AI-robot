@@ -39,11 +39,14 @@ The assistant is built by integrating multiple components:
 
 ## 📸 Images
 
-### 🔹 Voice Interaction
-![Voice](WhatsApp Image .jpeg)
+![](image/img1.jpeg)
 
-### 🔹 Text Interaction
-![Text Input](images/text.png)
+![](image/img2.jpeg)
 
-### 🔹 Output Example
-![Output](images/output.png)
+![](image/img3.jpeg)
+
+![](image/img4.jpeg)
+
+![](image/img5.jpeg)
+
+
