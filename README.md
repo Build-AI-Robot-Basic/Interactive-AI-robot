@@ -53,7 +53,7 @@ The assistant is built by integrating multiple components:
 
 ## 📸 Videos
 
-![](image/handMove.mp4)
+![Hand Move](image/handMove.mp4)
 
 
 
