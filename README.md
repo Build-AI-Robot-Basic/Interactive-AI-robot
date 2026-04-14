@@ -40,7 +40,7 @@ The assistant is built by integrating multiple components:
 ## 📸 Images
 
 ### 🔹 Voice Interaction
-![Voice Input](WhatsApp Image .jpeg)
+![Voice](WhatsApp Image .jpeg)
 
 ### 🔹 Text Interaction
 ![Text Input](images/text.png)
