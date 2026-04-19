@@ -4,17 +4,15 @@ Text Generation using Gemini API
 generate API key from: https://ai.google.dev/gemini-api/docs/api-key
 """
 
-import google.generativeai as genai
+from google import genai
 
-# Configure the Gemini API with your API key.
-genai.configure(api_key="AIzaSyDZK2n3x2MRXPPZRfKOKqULibKEaFYFmJc")
-
+client = genai.Client(api_key="AIzaSyCKTzb2ssRplrWe8ZZ0D-PuvXddeRRtArU")
 
 def gemini_api(text):
-    # Initialize a genAI model
-    model = genai.GenerativeModel(model_name="gemini-3-flash-preview")
-    # generate a response based on the input text.
-    response = model.generate_content(text)
+    response = client.models.generate_content(
+        model="gemini-3-flash-preview",
+        contents=text
+    )
 
     print(response.text)
 
