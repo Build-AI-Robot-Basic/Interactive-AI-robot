@@ -1,4 +1,5 @@
-"""
+
+  """
 AI-Speech Integration (VOSK + Gemini + Edge-TTS)
 """
 
@@ -16,12 +17,12 @@ from google import genai
 pygame.mixer.init()
 
 # VOSK small English model
-model = vosk.Model("../Resources/vosk-model-small-en-us-0.15")
+model = vosk.Model("../Resources/vosk-model-en-us-0.22")
 recognizer = vosk.KaldiRecognizer(model, 16000)
 
 
 # Gemini Client
-client = genai.Client(api_key="AQ.Ab8RN6IfQpXA4IMFuXkLnPIjXvigkNu8JpfEiKGxU-lNuntEHA")
+client = genai.Client(api_key="AIzaSyCKTzb2ssRplrWe8ZZ0D-PuvXddeRRtArU")
 
 # Edge TTS voice
 VOICE = "en-US-AriaNeural"
