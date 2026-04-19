@@ -8,8 +8,6 @@ Servo HServo;
 SerialData serialData(3, 3);
 int valsRec[3];
 
-bool started = false;
-
 void setup() {
   serialData.begin();
 
@@ -17,26 +15,23 @@ void setup() {
   RServo.attach(9);
   HServo.attach(10);
 
-  // وضع آمن (مفيش حركة)
   LServo.write(90);
   RServo.write(90);
-  HServo.write(70);
+  HServo.write(90);
 }
 
 void loop() {
 
   serialData.Get(valsRec);
 
-  //
-  int arm = constrain(valsRec[0], 0, 180);
+  int leftArm = constrain(valsRec[0], 0, 180);
+  int rightArm = constrain(valsRec[1], 0, 180);
+  int head = constrain(valsRec[2], 60, 120);
 
-  // 🤖 الإيدين
-  LServo.write( 180-arm);
-  RServo.write(arm);
+  LServo.write(leftArm);
 
-  // 🤖 الرأس (مع الميل اليمين)
- int head = valsRec[2];
+  // 🔄 عكس اتجاه اليمين
+  RServo.write(180 - rightArm);
 
-// ميل خفيف لليمين دائم + حركة الإشارة
-HServo.write(constrain(head + 20, 60, 120));
+  HServo.write(head);
 }
