@@ -1,0 +1,9 @@
+cvzone==1.5.6
+vosk==0.3.45
+pyaudio==0.2.13
+pygame==2.6.1
+edge-tts==6.1.12
+google-generativeai==0.7.2
+SpeechRecognition==3.10.0
+gTTS==2.5.1
+pyttsx3==2.90
