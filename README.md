@@ -36,6 +36,172 @@ The assistant is built by integrating multiple components:
 - Converts the generated response into audio output  
 
 ---
+# 🤖 AI Voice Robot - Project Guide
+
+## 📌 Overview
+
+This project is an AI-powered interactive robot that:
+
+* Listens to user speech 🎤
+* Converts speech to text
+* Generates intelligent responses using Google Gemini
+* Converts responses to speech 🔊
+* Controls a physical robot using Arduino 🤖
+
+---
+
+## 📁 Project Structure
+
+Make sure your project is organized as follows:
+
+* `Step1_VOSK.py` → Speech-to-Text (Offline)
+* `Step2_Gemini.py` → AI Response
+* `Step3_TTS.py` → Text-to-Speech
+* `Main_System.py` → Full integrated system
+* `Arduino_Code.ino` → Arduino servo control
+* `cvzone.h / cvzone.cpp` → Serial communication
+* `Resources/`
+
+  * VOSK model
+  * sound effects
+  * generated speech files
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Install Required Libraries
+
+### Python:
+
+```bash
+pip install vosk pyaudio pygame edge-tts google-generativeai cvzone
+```
+
+### Arduino:
+
+* Install Servo library (built-in)
+* Add cvzone files to Arduino project
+
+---
+
+## 🔌 Hardware Setup
+
+* Connect 3 Servo Motors to Arduino:
+
+  * Pin 8 → Left Arm
+  * Pin 9 → Right Arm
+  * Pin 10 → Head
+* Connect Arduino to your computer via USB
+
+---
+
+## 🚀 How to Run the Project (IMPORTANT ORDER)
+
+### ✅ Step 1: Upload Arduino Code
+
+* Open `Arduino_Code.ino`
+* Upload it to Arduino using Arduino IDE
+* Make sure Serial baud rate matches Python (e.g. 9600)
+
+---
+
+### ✅ Step 2: Test Serial Communication
+
+* Run simple Python script (send test values)
+* Check Serial Monitor for received data
+
+---
+
+### ✅ Step 3: Test Speech-to-Text
+
+Run:
+
+```bash
+python Step1_VOSK.py
+```
+
+* Speak and verify text output
+
+---
+
+### ✅ Step 4: Test AI Response
+
+Run:
+
+```bash
+python Step2_Gemini.py
+```
+
+* Verify AI response generation
+
+---
+
+### ✅ Step 5: Test Text-to-Speech
+
+Run:
+
+```bash
+python Step3_TTS.py
+```
+
+* Confirm audio output works
+
+---
+
+### ✅ Step 6: Run Full System
+
+```bash
+python Main_System.py
+```
+
+Now the robot will:
+
+1. Listen 🎤
+2. Understand 🧠
+3. Respond 🔊
+4. Move 🤖
+
+---
+
+## 🎯 Notes & Tips
+
+* Make sure microphone is working
+* Check COM port for Arduino
+* Ensure VOSK model path is correct
+* Replace your Gemini API key (DO NOT upload it publicly ⚠️)
+
+---
+
+## ⚠️ Common Issues
+
+* No sound → check pygame / audio device
+* No movement → check Arduino connection
+* Wrong speech → adjust microphone noise settings
+* Delay → reduce buffer size or improve hardware
+
+---
+
+## 💡 Future Improvements
+
+* Add wake word (e.g., "Hey Emma")
+* Add face detection
+* Add more gestures
+* Improve real-time performance
+
+---
+
+## 🧠 Concept Summary
+
+This project demonstrates how to integrate:
+
+* AI models
+* Speech processing
+* Hardware control
+
+into a single interactive robotic system.
+
+---
 
 ## 📸 Images
 
