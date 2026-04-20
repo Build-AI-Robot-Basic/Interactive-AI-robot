@@ -203,6 +203,21 @@ into a single interactive robotic system.
 
 ---
 
+### 🔊 Audio Setup
+- Install PyAudio:
+  pip install pyaudio
+  (On Windows, you may need a precompiled wheel)
+
+### 🧠 Vosk Model
+- Download a Vosk model from:
+  https://alphacephei.com/vosk/models
+- Extract and place it in the project folder
+
+### 🎤 Microphone
+- Ensure your microphone is connected and working properly
+  
+---
+
 ## 🌍 Real-World Applications
 
 This project demonstrates a practical integration of artificial intelligence, speech processing, and hardware control, which makes it applicable in several real-world domains.
